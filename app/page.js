@@ -40,10 +40,21 @@ export default function Home() {
     };
     window.addEventListener('scroll', handleScroll);
 
+    window.addEventListener('scroll', function() {
+      var scrollPosition = window.pageYOffset || document.documentElement.scrollTop;
+      var bgOffset = scrollPosition / 4; // Adjust the scroll speed here
+    
+      document.querySelector('.grid-bg').style.backgroundPositionY = -bgOffset + 'px';
+    });
+
   }, []);
 
+
+
   return (
-    <main className="bg-zinc-900 grid-bg">
+    <>
+    <div className="grid-bg bg-zinc-900"></div>
+    <main className=" ">
       {Navbar()}
       <div class="text-center mt-64">
         <div class="py-8 px-4 mx-auto max-w-screen-xl text-center lg:py-16 z-10 relative">
@@ -57,18 +68,18 @@ export default function Home() {
         </div>
       </div>
 
-      <div className="w-screen pt-60 text-center">
+      <div className="w-full pt-60 text-center">
         <h1 class="mb-4 text-4xl font-extrabold tracking-tight leading-none text-gray-900 md:text-2xl lg:text-4xl dark:text-white">Stuff I've Made</h1>
         <br></br>
         <div className="flex justify-center ">
           <div class="inline-flex rounded-md shadow-sm">
-            <a href="#" class="px-6 py-4 w-50 text-sm font-medium text-blue-700 bg-white border border-gray-200 rounded-l-lg hover:bg-gray-100 focus:z-10 focus:ring-2 focus:ring-blue-700 focus:text-blue-700 dark:bg-gray-700 dark:border-gray-600 dark:text-white dark:hover:text-white dark:hover:bg-gray-600 dark:focus:ring-blue-500 dark:focus:text-white">
+            <a href="binary.liamsherwin.tech" class="px-6 py-4 w-50 text-sm font-medium text-blue-700 bg-white border border-gray-200 rounded-l-lg hover:bg-gray-100 focus:z-10 focus:ring-2 focus:ring-blue-700 focus:text-blue-700 dark:bg-gray-700 dark:border-gray-600 dark:text-white dark:hover:text-white dark:hover:bg-gray-600 dark:focus:ring-blue-500 dark:focus:text-white">
               Learn Binary
             </a>
-            <a href="#" class="px-6 py-4 w-50 text-sm font-medium text-gray-900 bg-white border-t border-b border-gray-200 hover:bg-gray-100 hover:text-blue-700 focus:z-10 focus:ring-2 focus:ring-blue-700 focus:text-blue-700 dark:bg-gray-700 dark:border-gray-600 dark:text-white dark:hover:text-white dark:hover:bg-gray-600 dark:focus:ring-blue-500 dark:focus:text-white">
+            <a href="rtt.liamsherwin.tech" class="px-6 py-4 w-50 text-sm font-medium text-gray-900 bg-white border-t border-b border-gray-200 hover:bg-gray-100 hover:text-blue-700 focus:z-10 focus:ring-2 focus:ring-blue-700 focus:text-blue-700 dark:bg-gray-700 dark:border-gray-600 dark:text-white dark:hover:text-white dark:hover:bg-gray-600 dark:focus:ring-blue-500 dark:focus:text-white">
               Reaction Time Test
             </a>
-            <a href="#" class="px-6 py-4 w-50 text-sm font-medium text-gray-900 bg-white border border-gray-200 rounded-r-md hover:bg-gray-100 hover:text-blue-700 focus:z-10 focus:ring-2 focus:ring-blue-700 focus:text-blue-700 dark:bg-gray-700 dark:border-gray-600 dark:text-white dark:hover:text-white dark:hover:bg-gray-600 dark:focus:ring-blue-500 dark:focus:text-white">
+            <a href="mesh.liamsherwin.tech" class="px-6 py-4 w-50 text-sm font-medium text-gray-900 bg-white border border-gray-200 rounded-r-md hover:bg-gray-100 hover:text-blue-700 focus:z-10 focus:ring-2 focus:ring-blue-700 focus:text-blue-700 dark:bg-gray-700 dark:border-gray-600 dark:text-white dark:hover:text-white dark:hover:bg-gray-600 dark:focus:ring-blue-500 dark:focus:text-white">
               Mesh Network Sim
             </a>
           </div>
@@ -81,7 +92,7 @@ export default function Home() {
         </a>
       </div>
 
-      <div className="w-screen bg-zinc-800 my-20 h-60">
+      <div className="w-full bg-zinc-800 my-20 h-60">
 
       </div>
 
@@ -89,9 +100,9 @@ export default function Home() {
       <ol class="relative border-l border-gray-200 dark:border-gray-700 ml-52 w-1/3">
         <li class="mb-10 ml-4">
           <div class="absolute w-3 h-3 bg-gray-200 rounded-full mt-1.5 -left-1.5 border border-white dark:border-gray-900 dark:bg-gray-700"></div>
-          <time class="mb-1 text-sm font-normal leading-none text-gray-400 dark:text-gray-500">February 2022</time>
-          <h3 class="text-lg font-semibold text-gray-900 dark:text-white">Lorem ipsum dolor sit amet</h3>
-          <p class="mb-4 text-base font-normal text-gray-500 dark:text-gray-400">Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. </p>
+          <time class="mb-1 text-sm font-normal leading-none text-gray-400 dark:text-gray-500">March 2020</time>
+          <h3 class="text-lg font-semibold text-gray-900 dark:text-white">Made my first website</h3>
+          <p class="mb-4 text-base font-normal text-gray-500 dark:text-gray-400">During the 2020 lockdown, my dad gave me an HTML programming book. After devouring its contents for weeks, I created my first website. It ran locally on our home network, made up of simple HTML files.</p>
           <a href="#" class="inline-flex items-center px-4 py-2 text-sm font-medium text-gray-900 bg-white border border-gray-200 rounded-lg hover:bg-gray-100 hover:text-blue-700 focus:z-10 focus:ring-4 focus:outline-none focus:ring-gray-200 focus:text-blue-700 dark:bg-gray-800 dark:text-gray-400 dark:border-gray-600 dark:hover:text-white dark:hover:bg-gray-700 dark:focus:ring-gray-700">Learn more <svg class="w-3 h-3 ml-2" fill="currentColor" viewBox="0 0 20 20" xmlns="http://www.w3.org/2000/svg"><path fill-rule="evenodd" d="M12.293 5.293a1 1 0 011.414 0l4 4a1 1 0 010 1.414l-4 4a1 1 0 01-1.414-1.414L14.586 11H3a1 1 0 110-2h11.586l-2.293-2.293a1 1 0 010-1.414z" clip-rule="evenodd"></path></svg></a>
         </li>
         <li class="mb-10 ml-4">
@@ -114,38 +125,15 @@ export default function Home() {
       <br></br>
       <br></br>
       <br></br>
-      <br></br>
-      <br></br>
-      <br></br>
-      <br></br>
-      <br></br>
-      <br></br>
-      <br></br>
-      <br></br>
-      <br></br>
-      <br></br>
-      <br></br>
-      <br></br>
-      <br></br>
-      <br></br>
-      <br></br>
-      <br></br>
-      <br></br>
-      <br></br>
-      <br></br>
-      <br></br>
-      <br></br>
-      <br></br>
-      <br></br>
-      <br></br>
-      <br></br>
-      <br></br>
 
 
-      <footer class="fixed bottom-0 left-0 z-20 w-full p-4 bg-gradient-to-t from-zinc-900 h-52 passthrough">
+      <footer class="fixed bottom-0 left-0 z-20 w-full p-4 bg-gradient-to-t from-zinc-900 h-32 passthrough">
       </footer>
 
       <script src="/flowbite.min.js"></script>
     </main>
+    </>
+
+
   )
 }
