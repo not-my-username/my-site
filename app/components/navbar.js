@@ -1,6 +1,6 @@
 export default function Navbar(user, current_page) {
     return (
-        <nav class="bg-white border-gray-200 dark:bg-zinc-900">
+        <nav class="bg-gradient-to-b from-zinc-900 fixed w-full z-20 top-0 left-0 h-32">
             <div class="max-w-screen-xl flex flex-wrap items-center justify-center mx-auto p-4">
                 
                 <div class="flex md:order-2">
@@ -10,7 +10,7 @@ export default function Navbar(user, current_page) {
                     </button>
                 </div>
                 <div class="items-center justify-between hidden w-full md:flex md:w-auto md:order-1" id="navbar-cta">
-                    <ul class="flex flex-col font-medium p-4 md:p-0 mt-4 border border-gray-100 rounded-lg bg-gray-50 md:flex-row md:space-x-8 md:mt-0 md:border-0 md:bg-white dark:bg-gray-800 md:dark:bg-zinc-900 dark:border-gray-700">
+                    <ul class="flex flex-col font-medium p-1 px-5 mt-4 border border-gray-100 rounded-2xl bg-gray-50 md:flex-row md:space-x-8 md:mt-0 md:border-0 md:bg-white dark:bg-gray-800 md:dark:bg-zinc-900 dark:border-gray-700">
                         <li>
                             <a href="#" class="block py-2 pl-3 pr-4 text-white bg-blue-700 rounded md:bg-transparent md:text-blue-700 md:p-0 md:dark:text-blue-500" aria-current="page">Home</a>
                         </li>

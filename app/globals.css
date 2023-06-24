@@ -1,3 +1,40 @@
 @tailwind base;
 @tailwind components;
 @tailwind utilities;
+
+.passthrough {
+  pointer-events: none;
+}
+/* 
+.grid-bg {
+  background-size: 40px 40px;
+  background-image:
+    linear-gradient(to right, rgb(255, 255, 255) 1px, transparent 1px),
+    linear-gradient(to bottom, rgb(255, 255, 255) 1px, transparent 1px);
+    background-position: 19px;
+} */
+.grid-bg {
+  background-image: radial-gradient(#1e1e1e 2px, transparent 2px);
+  background-size: 40px 40px; /* Adjust the size of the dots */
+}
+
+.h-61 {
+  height: 241px;
+}
+
+@keyframes flash {
+  0% {
+    opacity: 1;
+  }
+  50% {
+    opacity: 0;
+  }
+  100% {
+    opacity: 1;
+  }
+}
+
+
+.flash {
+  animation: flash 1s infinite;
+}
