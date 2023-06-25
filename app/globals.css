@@ -51,3 +51,13 @@
 .flash {
   animation: flash 1s infinite;
 }
+
+
+.glow {
+  text-shadow: 0 0 10px #ffffff57
+}
+
+.glow-blue {
+  text-shadow: 0 0 10px rgb(37 99 235);
+
+}
