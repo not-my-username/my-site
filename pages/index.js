@@ -60,7 +60,7 @@ export default function Home() {
   return (
     <>
     <div className="grid-bg bg-zinc-900"></div>
-    <main className=" ">
+    <main className="dark">
       {Navbar()}
       <div class="text-center mt-64">
         <div class="py-8 px-4 mx-auto max-w-screen-xl text-center lg:py-16 z-10 relative">
