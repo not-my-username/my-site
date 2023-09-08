@@ -39,8 +39,8 @@ export default function Navbar(user, current_page) {
     }, []);
 
     return (
-        <nav class="bg-gradient-to-b from-zinc-900 fixed w-full z-20 top-0 left-0 h-32">
-            <div class="max-w-screen-xl flex flex-wrap items-center justify-center mx-auto p-4">
+        <nav class="bg-gradient-to-b from-zinc-900 fixed w-full z-20 top-0 left-0 h-32 pointer-events-none">
+            <div class="max-w-screen-xl flex flex-wrap items-center justify-center mx-auto p-4  pointer-events-auto">
 
                 <div class="flex md:order-2">
                     <button data-collapse-toggle="navbar-cta" type="button" class="inline-flex items-center p-2 text-sm text-gray-500 rounded-lg md:hidden hover:bg-gray-100 focus:outline-none focus:ring-2 focus:ring-gray-200 dark:text-gray-400 dark:hover:bg-gray-700 dark:focus:ring-gray-600" aria-controls="navbar-cta" aria-expanded="false">
@@ -49,7 +49,7 @@ export default function Navbar(user, current_page) {
                     </button>
                 </div>
                 <div class="items-center justify-between hidden w-full md:flex md:w-auto md:order-1" id="navbar-cta">
-                    <ul class="flex flex-col font-medium p-1 px-5 mt-4 border border-gray-100 rounded-2xl bg-gray-50 md:flex-row md:space-x-8 md:mt-0 md:border-0 md:bg-white dark:bg-gray-800 md:dark:bg-zinc-900 dark:border-gray-700">
+                    <ul class="flex flex-col font-medium p-1 px-5 mt-4 border border-gray-100 rounded-2xl bg-gray-50 md:flex-row md:space-x-8 md:mt-0 md:border-0 md:bg-white dark:bg-gray-800 md:dark:bg-zinc-900 dark:border-gray-700 ">
                         <li>
                             <a href="/" class="block py-2 pl-3 pr-4 w-20 text-center text-white bg-blue-700 rounded md:bg-transparent md:text-blue-700 md:p-0 md:dark:text-blue-500 font-mono" aria-current="page" id="home-button" value="Home">Home</a>
                         </li>
