@@ -61,7 +61,6 @@ export default function Home() {
 		<html lang="en">
 		<head>
 			<title>Liam's Site</title>
-			<meta name="description" content="update this lime">
 		</head>
 		<body>
 			<>	
