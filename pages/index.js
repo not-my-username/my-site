@@ -58,6 +58,7 @@ export default function Home() {
 
 
 	return (
+	     <html lang="en">
 		<>
 			<div className="grid-bg bg-zinc-900"></div>
 			<main className="dark">
@@ -137,6 +138,7 @@ export default function Home() {
 				<script src="/flowbite.min.js"></script>
 			</main>
 		</>
+	     </html>
 
 
 	)
