@@ -7,18 +7,15 @@ module.exports = {
   ],
   theme: {
     extend: {
-      backgroundImage: {
-        'gradient-radial': 'radial-gradient(var(--tw-gradient-stops))',
-        'gradient-conic':
-          'conic-gradient(from 180deg at 50% 50%, var(--tw-gradient-stops))',
-      },
+      
       colors: {
         'black-50%': '#18181bf2',
       },
     },
   },
   plugins: [
-      require('flowbite/plugin')
+      require('flowbite/plugin'),
+      require('tailwindcss-animated')
   ],
   darkMode: 'class',
 
