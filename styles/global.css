@@ -85,3 +85,7 @@
   text-shadow: 0 0 10px rgb(37 99 235);
 
 }
+
+:root {
+  color-scheme: dark;
+}
