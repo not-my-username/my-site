@@ -9,16 +9,16 @@ export default function MyWork() {
                     {/* <p class="text-gray-500 sm:text-xl dark:text-gray-400">Here is a list of all the things I have made</p> */}
                 </div>
                 <div class="space-y-8 md:grid md:grid-cols-2 lg:grid-cols-3 md:gap-12 md:space-y-0">
-                    <a class="bg-zinc-900 m-3" href="https://spectrum.liamsherwin.tech">
-                        <div class="flex justify-center items-center mb-4 w-10 h-10 rounded-full lg:h-12 lg:w-12 ">
+                    <a class="bg-zinc-900 m-3 lg:p-5 lg:rounded-2xl" href="https://spectrum.liamsherwin.tech">
+                        <div class="flex justify-center items-center mb-4 w-10 h-10 rounded-full lg:h-12 lg:w-12 lg:inline-block">
                             <span class="material-symbols-outlined">
                                 lightbulb
                             </span>
                         </div>
                         <h3 class="mb-2 text-xl font-bold dark:text-white">Spectrum</h3>
-                        <p class="text-gray-500 dark:text-gray-400">Spectrum is a program to visulise music using stage lights for live shows, done in realtime</p>
+                        <p class="text-gray-500 dark:text-gray-400">Realtime node based DMX lighting engine</p>
                     </a>
-                    <a class=" bg-zinc-900 m-3" href="https://rtt.liamsherwin.tech">
+                    <a class=" bg-zinc-900 m-3 lg:p-5 lg:rounded-2xl" href="https://rtt.liamsherwin.tech">
                         <div class="flex justify-center items-center mb-4 w-10 h-10 rounded-full lg:h-12 lg:w-12">
                             <span class="material-symbols-outlined">
                                 timer
@@ -27,7 +27,7 @@ export default function MyWork() {
                         <h3 class="mb-2 text-xl font-bold dark:text-white">Reaction Time Test</h3>
                         <p class="text-gray-500 dark:text-gray-400">A very very simple website to test your reaction time</p>
                     </a>
-                    <a class=" bg-zinc-900 m-3" href="https://binary.liamsherwin.tech">
+                    <a class=" bg-zinc-900 m-3 lg:p-5 lg:rounded-2xl" href="https://binary.liamsherwin.tech">
                         <div class="flex justify-center items-center mb-4 w-10 h-10 rounded-full lg:h-12 lg:w-12 ">
                             <span class="material-symbols-outlined">
                                 timer_10
