@@ -4,9 +4,9 @@
   "private": true,
   "scripts": {
     "dev": "next dev",
-    "build": "next build",
-    "start": "next start",
-    "lint": "next lint"
+    "build": "next build && npx @cloudflare/next-on-pages",
+    "preview": "npx wrangler dev .vercel/output/functions/[[path]].func",
+    "deploy": "npx wrangler deploy"
   },
   "dependencies": {
     "autoprefixer": "^10.4.21",
