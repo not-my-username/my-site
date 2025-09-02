@@ -1,0 +1,4 @@
+[
+	{ "id": "home-button", "href": "#title", "text": "Home" },
+	{ "id": "about-button", "href": "#my-work", "text": "My Work" }
+]
