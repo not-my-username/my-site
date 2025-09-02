@@ -1,6 +1,0 @@
-name = "my-next-worker"
-main = ".vercel/output/functions/[[path]].func/index.js"
-compatibility_date = "2025-09-01"
-
-[site]
-bucket = ".vercel/output/static"
