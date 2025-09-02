@@ -1,9 +1,6 @@
-import '../styles/global.css'
+import "../styles/global.css";
 
 export default function MyApp({ Component, pageProps }) {
-  console.log(pageProps)
-  return (
-      <Component {...pageProps}/>
-    )
-    
+	console.log(pageProps);
+	return <Component {...pageProps} />;
 }
