@@ -1,15 +1,15 @@
 [
 	{
 		"title": "Spectrum",
-		"description": "Realtime node based DMX lighting engine",
+		"description": "Realtime modular DMX lighting engine",
 		"url": "https://spectrum.liamsherwin.com",
 		"icon": "lightbulb"
 	},
 	{
-		"title": "Reaction Time Test",
-		"description": "A very very simple website to test your reaction time",
-		"url": "https://rtt.liamsherwin.com",
-		"icon": "timer"
+		"title": "SiImpactControl",
+		"description": "A godot program to control the Soundcraft SiImpact digital mixer",
+		"url": "https://github.com/not-my-username/SiImpactControl",
+		"icon": "instant_mix"
 	},
 	{
 		"title": "Learn Binary",

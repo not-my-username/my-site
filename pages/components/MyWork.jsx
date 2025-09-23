@@ -14,7 +14,7 @@ export default function MyWork() {
 					{workItems.map((item, index) => (
 						<a
 							key={index}
-							className="bg-zinc-900 m-3 lg:p-5 lg:rounded-2xl"
+							className="m-3 p-5 rounded-2xl border-2 border-zinc-800 backdrop-blur-xs"
 							href={item.url}
 						>
 							<div className="flex justify-center items-center mb-4 w-10 h-10 rounded-full lg:h-12 lg:w-12">

@@ -44,7 +44,7 @@
 	left: 0;
 	width: 100%;
 	height: 100%;
-	background-image: radial-gradient(#242424 2px, transparent 2px);
+	background-image: radial-gradient(#36363641 2px, transparent 4px);
 	background-size: 40px 40px;
 	z-index: -1;
 }
@@ -92,4 +92,11 @@
 
 html {
 	scroll-behavior: smooth;
+}
+
+.title-wrapper {
+  display: inline-block;
+  transition: transform 1s ease;
+  transition:all;
+  /* background: #f00; */
 }
