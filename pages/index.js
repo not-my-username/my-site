@@ -10,7 +10,7 @@ export default function Home() {
 		const handleScroll = () => {
 			const scrollPosition =
 				window.pageYOffset || document.documentElement.scrollTop;
-			const bgOffset = scrollPosition / 8; // Adjust the scroll speed here
+			const bgOffset = scrollPosition / 8;
 
 			document.querySelector(".grid-bg").style.backgroundPositionY =
 				-bgOffset + "px";

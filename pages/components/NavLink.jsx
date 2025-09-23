@@ -4,7 +4,7 @@ import { useEffect, useRef } from "react";
 
 export default function NavLink({ id, href, text }) {
 	const linkRef = useRef(null);
-	const letters = "ABCDEFGHIJKLMNOPQRSTUVWXYZabcdefghijklmnopqrstuvwxyz@#$%&";
+	const letters = "ABCDEFGHIJKLMNOPQRSTUVWXYZ!@#$%&{}[]()";
 
 	useEffect(() => {
 		const element = linkRef.current;

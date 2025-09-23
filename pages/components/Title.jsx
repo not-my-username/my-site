@@ -5,7 +5,7 @@ import { useEffect, useState } from "react";
 // Title headding, and subheadding
 export default function Title() {
 	// useState for the cursor
-	const [showElement, setShowElement] = useState(true);
+	const [cursorClass, setCursorClass] = useState("flash");
 
 	// useState for the subheadding of the title
 	const [subHeaddingClasses, setSubHeaddngClasses] = useState("invisible");
@@ -21,7 +21,7 @@ export default function Title() {
 
 	// Types the text
 	function type(text) {
-		setCursorFlash(false);
+		setCursorClass("false");
 		var typedText = "";
 		var i = 0;
 
@@ -31,71 +31,57 @@ export default function Title() {
 
 			if (i == text.length - 1) {
 				clearInterval(interval);
-				setCursorFlash(true);
+				setCursorClass("opacity-0");
 				setTimeout(() => {
 					setSubHeaddngClasses(
 						"text-gray-200 animate-fade-right animate-ease-out"
 					);
-				}, 500);
+				}, 300);
 
 				setTimeout(() => {
 					setNewTagClasses("animate-fade-right animate-ease-out");
-				}, 600);
+				}, 400);
 			}
 			i++;
 		}, 80);
 	}
 
-	// useEffect to hide the cursor once the user scrolls down
-	useEffect(() => {
-		const handleScroll = () => {
-			const position =
-				window.pageYOffset ||
-				document.documentElement.scrollTop ||
-				document.body.scrollTop;
-
-			if (position > 400) {
-				setShowElement(false);
-				window.removeEventListener("scroll", handleScroll);
-
-				setSubHeaddngClasses(
-					"text-gray-200 animate-fade-right animate-ease-out"
-				);
-				setNewTagClasses("animate-fade-right animate-ease-out");
-			}
-		};
-
-		window.addEventListener("scroll", handleScroll);
-	}, []);
-
 	// useEffect to start the typing animation after 1 second
 	useEffect(() => {
-		const orignalText = "Hi there!     I'm Liam";
+		const orignalText = "Hi there!     I'm Liam.";
 
 		setTimeout(() => {
 			type(orignalText);
-		}, 1000);
+		}, 1500);
 	}, []);
 
 	// Page
 	return (
 		<div class="text-center h-screen flex" id="title">
 			<div class="py-8 px-4 m-auto max-w-screen-xl text-left lg:py-16 z-10 relative">
-				<h1 class="mb-4 text-4xl font-extrabold tracking-tight leading-none text-gray-900 md:text-5xl lg:text-6xl dark:text-white inline-block transition-all glow">
+				<h1 className="mb-2 text-4xl font-extrabold tracking-tight leading-none text-gray-900 md:text-5xl lg:text-6xl dark:text-white inline-flex items-end transition-all glow">
 					{titleText}
-				</h1>
-				{showElement && (
-					<p
+
+					<span
 						className={
-							"mb-4 text-4xl font-extrabold tracking-tight leading-none text-gray-900 md:text-5xl lg:text-6xl dark:text-white inline-block " +
-							(cursorFlash ? "flash" : "")
+							"mb-2 text-4xl font-extrabold tracking-tight leading-none text-gray-900 md:text-5xl lg:text-6xl dark:text-white inline-block transition-opacity duration-500 " +
+							cursorClass
 						}>
 						|
-					</p>
-				)}
+					</span>
+
+					<span
+						class={
+							subHeaddingClasses +
+							" text-xs lg:text-lg text-gray-300 font-normal"
+						}>
+						He/Him
+					</span>
+				</h1>
+
 				<p
 					class={
-						"mb-8 text-lg font-normal lg:text-xl " +
+						"mb-4 text-sm font-normal lg:text-xl " +
 						subHeaddingClasses
 					}>
 					And I'm a student who's passionate about Audio Visual,
