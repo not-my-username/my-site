@@ -1,5 +1,5 @@
 import NavLink from "./NavLink";
-import navLinks from "../../data/NavLinks.json";
+import navLinks from "../data/NavLinks.json";
 
 export default function Navbar() {
 	return (
