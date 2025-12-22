@@ -16,5 +16,11 @@
 		"description": "A very very simple website to test your binary to decimal skills",
 		"url": "https://binary.liamsherwin.com",
 		"icon": "timer_10"
+	},
+	{
+		"title": "TwinklyControl",
+		"description": "A simple program that lets you control Twinkly LED lights using Art-Net. ",
+		"url": "https://github.com/not-my-username/TwinklyControl",
+		"icon": "stars"
 	}
 ]
