@@ -1,7 +1,7 @@
 [
 	{
 		"title": "Spectrum",
-		"description": "Realtime modular DMX lighting engine",
+		"description": "The object-oriented lighting control framework",
 		"url": "https://spectrum.liamsherwin.com",
 		"icon": "lightbulb"
 	},
