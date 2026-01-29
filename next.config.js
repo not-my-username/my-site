@@ -1,14 +1,4 @@
 /** @type {import('next').NextConfig} */
-const nextConfig = {
-    webpack: (config) => {
-        config.module.rules.push({
-          type: "javascript/auto",
-          test: /\.mjs$/,
-          include: /node_modules/
-        });
-    
-        return config;
-      }
-}
+const nextConfig = {};
 
-module.exports = nextConfig
+module.exports = nextConfig;
