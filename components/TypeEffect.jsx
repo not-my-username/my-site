@@ -1,11 +1,17 @@
 "use client";
 
-import { SEGMENT_EXPLORER_SIMULATED_ERROR_MESSAGE } from "next/dist/next-devtools/userspace/app/segment-explorer-node";
 import { useEffect, useState } from "react";
 
 // Typing effect + heading
-export default function TypeEffect({ text, delay = 1500, speed = 60, hideCursor = true, children, onComplete }) {
-    const [cursorClass, setCursorClass] = useState("flash");
+export default function TypeEffect({
+	text,
+	delay = 1500,
+	speed = 60,
+	hideCursor = true,
+	children,
+	onComplete,
+}) {
+	const [cursorClass, setCursorClass] = useState("flash");
 	const [titleText, setTitleText] = useState("");
 
 	function type(text) {
@@ -23,10 +29,10 @@ export default function TypeEffect({ text, delay = 1500, speed = 60, hideCursor 
 				if (hideCursor) {
 					setCursorClass("opacity-0");
 				} else {
-					setCursorClass("flash")
+					setCursorClass("flash");
 				}
-            
-                // Call the callback if provided
+
+				// Call the callback if provided
 				if (typeof onComplete === "function") {
 					onComplete();
 				}
@@ -51,7 +57,7 @@ export default function TypeEffect({ text, delay = 1500, speed = 60, hideCursor 
 				}>
 				|
 			</span>
-            {children}
+			{children}
 		</h1>
 	);
 }

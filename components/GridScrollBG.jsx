@@ -18,5 +18,7 @@ export default function ScrollGridBG() {
 		};
 	}, []);
 
-	return <div className="grid-bg bg-zinc-900 fixed top-0 left-0 w-full h-full -z-10"></div>;
+	return (
+		<div className="grid-bg bg-zinc-900 fixed top-0 left-0 w-full h-full -z-10"></div>
+	);
 }

@@ -4,7 +4,6 @@ import TypeEffect from "./TypeEffect";
 
 // Title headding, and subheadding
 export default function Title() {
-
 	// useState for the subheadding of the title
 	const [subHeaddingClasses, setSubHeaddngClasses] = useState("invisible");
 
@@ -19,13 +18,13 @@ export default function Title() {
 					onComplete={() => {
 						setTimeout(() => {
 							setSubHeaddngClasses(
-								"text-gray-200 animate-fade-right animate-ease-out"
+								"text-gray-200 animate-fade-right animate-ease-out",
 							);
 						}, 300);
 
 						setTimeout(() => {
 							setNewTagClasses(
-								"animate-fade-right animate-ease-out"
+								"animate-fade-right animate-ease-out",
 							);
 						}, 400);
 					}}>

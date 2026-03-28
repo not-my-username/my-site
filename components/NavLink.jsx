@@ -39,8 +39,7 @@ export default function NavLink({ id, href, text }) {
 			id={id}
 			href={href}
 			data-value={text}
-			className="block p-3 m-0 text-center text-white rounded font-mono hover:text-blue-600"
-		>
+			className="block p-3 m-0 text-center text-white rounded font-mono hover:text-blue-600">
 			{text}
 		</a>
 	);
